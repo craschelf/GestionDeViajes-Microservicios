@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<link rel="stylesheet" href="css/inicio.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<title>Hotel Ejemplo</title>
+</head>
+<body>
+	<form th:action="@{/reservas/nueva}" method="post" class="search-container">
+	    <label for="numPersonas">nº de personas que viajan</label>
+	    <input type="text" id="numPersonas" name="numPersonas" placeholder="Número de plazas a reservar..."/>
+	    
+	    <label for="nombreCliente">nombre del titular de la reserva</label>
+	    <input th:field="*{nombreCliente}" type="text" id="nombreCliente" />
+	    
+	    <label for="dni">dni</label>
+	    <input th:field="*{dni}" type="text" id="dni" />
+	    
+	    <label for="idHotel">id del hotel</label>
+	    <input th:field="*{idHotel}" type="text" id="idHotel" />
+	    
+	    <label for="idVuelo">id del vuelo</label>
+	    <input th:field="*{idVuelo}" type="text" id="idVuelo" />
+	    
+	    <button type="submit">Crear reserva</button>
+	</form>
+
+
+</body>
+
+</html>

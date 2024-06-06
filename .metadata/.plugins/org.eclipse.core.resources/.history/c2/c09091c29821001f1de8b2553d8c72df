@@ -1,0 +1,24 @@
+package com.curso.service;
+
+import java.util.List;
+
+import com.curso.model.Hotel;
+
+public interface HotelService {
+
+	/**
+	 * Método que devuelve todos los hoteles
+	 * 
+	 * @return lista de hoteles
+	 */
+	public List<Hotel> todosLosHoteles();
+
+	/**
+	 * Método en el que pasamos por parámetro el nombre de un hotel y nos devuelve
+	 * la info del mismo
+	 * 
+	 * @param nombreHotel
+	 * @return Hotel
+	 */
+	public Hotel obtenerHotelPorNombre(String nombreHotel);
+}

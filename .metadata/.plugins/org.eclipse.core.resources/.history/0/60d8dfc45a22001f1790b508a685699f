@@ -1,0 +1,20 @@
+package com.curso.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.curso.model.Reserva;
+import com.curso.service.ReservaService;
+
+@RestController
+public class ReservaController {
+	
+	@Autowired
+	ReservaService service;
+	
+	@PostMapping(value="reserva")
+	public void registrarReserva(Reserva reserva, int numPersonas) {
+		
+	}
+
+}

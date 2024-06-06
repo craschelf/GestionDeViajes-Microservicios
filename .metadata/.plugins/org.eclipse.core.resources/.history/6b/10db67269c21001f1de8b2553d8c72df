@@ -1,0 +1,15 @@
+package com.curso.inicio;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@EntityScan(basePackages="com.curso.model")
+@EnableJpaRepositories(basePackages="com.curso.dao")
+@SpringBootApplication(scanBasePackages = {"com.curso.controller", "com.curso.service"})
+public class HotelMicroservicioApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HotelMicroservicioApplication.class, args);
+	}
+
+}

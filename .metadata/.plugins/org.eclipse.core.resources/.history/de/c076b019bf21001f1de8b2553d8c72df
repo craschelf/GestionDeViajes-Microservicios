@@ -1,0 +1,15 @@
+package com.curso.service;
+
+import com.curso.model.Reserva;
+
+public interface ReservaService {
+
+	/**
+	 * Método que registrará una reserva y a su vez actualizará el número de plazas
+	 * disponibles para el vuelo asociado a la reserva
+	 * 
+	 * @param reserva
+	 */
+	public void registrarReserva(Reserva reserva, int numPersonas);
+
+}
