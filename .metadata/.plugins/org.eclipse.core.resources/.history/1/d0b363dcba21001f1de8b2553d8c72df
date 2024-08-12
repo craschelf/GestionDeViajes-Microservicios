@@ -1,8 +1,0 @@
-package com.curso.service;
-
-public interface ReservaService {
-
-	public void registrarReserva();
-	
-	
-}

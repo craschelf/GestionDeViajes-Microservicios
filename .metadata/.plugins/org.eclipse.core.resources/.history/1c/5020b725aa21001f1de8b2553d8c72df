@@ -1,6 +1,0 @@
-package com.curso.service;
-
-public interface VueloService {
-
-	List<Vuelo> vuelosConPlazasDisponibles(int plazasAReservar);
-}
